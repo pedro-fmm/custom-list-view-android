@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/listview"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@color/black" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imagem"
+        android:text="Nome" />
+
+<TextView
+    android:id="@+id/txtDescricao"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/imagem"
+    android:layout_marginLeft="20dp"
+    android:layout_below="@+id/txtNome"
+    style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+    android:text="Descricao"/>
+
+    <TextView
+        android:id="@+id/txtPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imagem"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/txtDescricao"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:text="Preco"/>
+
+</RelativeLayout>
